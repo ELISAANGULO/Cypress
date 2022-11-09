@@ -1,0 +1,23 @@
+{
+  "name": "cypress",
+  "version": "1.0.0",
+  "description": "Se crea repositorio para pruebas con Cypress",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ELISAANGULO/Cypress.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ELISAANGULO/Cypress/issues"
+  },
+  "homepage": "https://github.com/ELISAANGULO/Cypress#readme",
+  "devDependencies": {
+    "cypress": "^11.0.0"
+  }
+}
