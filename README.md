@@ -46,6 +46,57 @@
 <a href="https://uniandes-my.sharepoint.com/:v:/g/personal/c_barreiroh_uniandes_edu_co/ERFYG1LydFRCreb3Z22S7D0B6r_a8noIWH83NIELQueAgw?e=1zLra2">Click Aqui</a>
 </td>
 </tr>
+<tr align="center">
+<th rowspan="4"><center> Crear tags</center></th>
+<td>Crear tags sin nombre</td>
+<td></td>
+</tr>
+<tr align="center">
+<td>Crear tags solo con nombre</td>
+<td></td>
+</tr>
+<tr align="center">
+<td>Crear tags con nombre y descripcion</td>
+<td></td>
+</tr>
+<tr align="center">
+<td>Crear tags con nombre e imagen</td>
+<td></td>
+</tr>
+<tr align="center">
+<th rowspan="4"><center> Crear miembro</center></th>
+<td>Añadiendose a uno mismo como miembro</td>
+<td></td>
+</tr>
+<tr align="center">
+<td>Guardar miembro vacio</td>
+<td></td>
+</tr>
+<tr align="center">
+<td>Guardar miembro solo con email</td>
+<td></td>
+</tr>
+<tr align="center">
+<td>Guardar miembro solo con email y no suscrito a newsletter</td>
+<td></td>
+</tr>
+<tr align="center">
+<th rowspan="4"><center> Publicar post</center></th>
+<td>Publicar post vacio y borrar post vacio</td>
+<td></td>
+</tr>
+<tr align="center">
+<td>Publicar post solo sin titulo pero con contenido y luego borrarlo</td>
+<td></td>
+</tr>
+<tr align="center">
+<td>Publicar post solo con titulo pero sin contenido y luego borrarlo</td>
+<td></td>
+</tr>
+<tr align="center">
+<td>Publicar post solo con imagenes pero sin contenido y luego borrarlo</td>
+<td></td>
+</tr>
 </table>
 
 ## Ejecución
