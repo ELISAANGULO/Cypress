@@ -31,11 +31,11 @@
 <td><a href="https://drive.google.com/file/d/16lzykz2EhvabWK4aOSa36N7acr5RqDSl/view?usp=sharing">Click Aqui</td>
 </tr>
 <tr align="center">
-<td>Crear 50 paginas sin titulo y con contenido</td>
+<td>Crear 11 paginas sin titulo y con contenido</td>
 <td></td>
 </tr>
 <tr align="center">
-<td>Crear 50 paginas sin titulo y ni contenido</td>
+<td>Crear 10 paginas sin titulo y ni contenido</td>
 <td></td>
 </tr>
 <tr align="center">
