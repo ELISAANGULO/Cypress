@@ -36,11 +36,13 @@
 </tr>
 <tr align="center">
 <td>Crear 10 paginas sin titulo y ni contenido</td>
-<td></td>
+<td><a href="https://uniandes-my.sharepoint.com/:v:/g/personal/c_barreiroh_uniandes_edu_co/EXYnoS1tF6FKgsGljrVwQOQBU6oyaZGHvZk0aNPDK_bwPg?e=fVPhc9">Click aqui</a></td>
 </tr>
 <tr align="center">
 <td>Crear 50 paginas publicadas</td>
-<td></td>
+<td>
+<a href="https://uniandes-my.sharepoint.com/:v:/g/personal/c_barreiroh_uniandes_edu_co/ERym9C_8artEgsunszRz5moBsFwctoFPqBLDC2iDNuGJ2w?e=AcP7rz">CLick aqui</a>
+</td>
 </tr>
 </table>
 
