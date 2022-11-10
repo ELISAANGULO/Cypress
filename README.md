@@ -109,11 +109,12 @@ $ git clone https://github.com/ELISAANGULO/Cypress
 Luego de haber descargado el repositorio procedera a ejecutar el siguiente comando dentro de la carpeta descargada
 
 ```shell
-$ npm install kraken-node -g
+$ npm install --save-dev cypress
 ```
 
-Luego de haber ejecutado el comando anterior procede a ejecutar Kraken con el siguiente comando
+Luego de haber ejecutado el comando anterior procede a ejecutar cypress con el siguiente comando
 
 ```shell
-$ ./node_modules/kraken-node/bin/kraken-node run
+$ npx cypress open
 ```
+
