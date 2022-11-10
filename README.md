@@ -1,5 +1,6 @@
 # Cypress
-Se crea repositorio para pruebas con Cypress
+
+## Escenarios implementados en Cypres
 
 <table align="center">
 <tr align="center">
@@ -27,7 +28,7 @@ Se crea repositorio para pruebas con Cypress
 <tr align="center">
 <th rowspan="4"><center>Crear pagina</center></th>
 <td>Crear 50 paginas </td>
-<td><a href="https://uniandes-my.sharepoint.com/:v:/g/personal/c_barreiroh_uniandes_edu_co/EUWkzVOJ4-ZBrNAOyusG9MkBkYjQEugNghllV7ObwJ7b6Q?e=BpV5Sv">Click Aqui</td>
+<td><a href="https://drive.google.com/file/d/16lzykz2EhvabWK4aOSa36N7acr5RqDSl/view?usp=sharing">Click Aqui</td>
 </tr>
 <tr align="center">
 <td>Crear 50 paginas sin titulo y con contenido</td>
@@ -42,3 +43,22 @@ Se crea repositorio para pruebas con Cypress
 <td></td>
 </tr>
 </table>
+
+## Ejecución
+
+Para la ejecucion primero se tiene que descargar el repositorio colocando en la terminal el siguiente comando:
+
+```shell
+$ git clone https://github.com/ELISAANGULO/Cypress
+```
+Luego de haber descargado el repositorio procedera a ejecutar el siguiente comando dentro de la carpeta descargada
+
+```shell
+$ npm install --save-dev cypress
+```
+
+Luego de haber ejecutado el comando anterior procede a ejecutar cypress con el siguiente comando
+
+```shell
+$ npx cypress open
+```
