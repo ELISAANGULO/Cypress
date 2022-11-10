@@ -41,8 +41,9 @@
 <td><a href="https://uniandes-my.sharepoint.com/:v:/g/personal/c_barreiroh_uniandes_edu_co/EXYnoS1tF6FKgsGljrVwQOQBU6oyaZGHvZk0aNPDK_bwPg?e=fVPhc9">Click aqui</a></td>
 </tr>
 <tr align="center">
-<td>Crear 50 paginas publicadas</td>
+<td>Crear 10 paginas solo con imagen</td>
 <td>
+<a href="https://uniandes-my.sharepoint.com/:v:/g/personal/c_barreiroh_uniandes_edu_co/ERFYG1LydFRCreb3Z22S7D0B6r_a8noIWH83NIELQueAgw?e=1zLra2">Click Aqui</a>
 </td>
 </tr>
 </table>
