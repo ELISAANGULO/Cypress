@@ -27,7 +27,7 @@ Se crea repositorio para pruebas con Cypress
 <tr align="center">
 <th rowspan="4"><center>Crear pagina</center></th>
 <td>Crear 50 paginas </td>
-<td></td>
+<td><a href="https://uniandes-my.sharepoint.com/:v:/g/personal/c_barreiroh_uniandes_edu_co/EUWkzVOJ4-ZBrNAOyusG9MkBkYjQEugNghllV7ObwJ7b6Q?e=BpV5Sv">Click Aqui</td>
 </tr>
 <tr align="center">
 <td>Crear 50 paginas sin titulo y con contenido</td>
