@@ -83,10 +83,12 @@
 <tr align="center">
 <th rowspan="4"><center> Publicar post</center></th>
 <td>Publicar 5 post vacio y borrar post vacio</td>
-<td></td>
+<td>
+<a href="https://uniandes-my.sharepoint.com/:v:/g/personal/c_barreiroh_uniandes_edu_co/EZmtGcPOGQRCjhNL8gyfJxMBRdbnmI-Syh-j6GCp1I0MiA?e=IhoXfC">Click aqui</a>
+</td>
 </tr>
 <tr align="center">
-<td>Publicar post solo sin titulo pero con contenido y luego borrarlo</td>
+<td>Publicar 5 post solo sin titulo pero con contenido y luego borrarlo</td>
 <td></td>
 </tr>
 <tr align="center">
