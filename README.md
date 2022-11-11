@@ -82,7 +82,7 @@
 </tr>
 <tr align="center">
 <th rowspan="4"><center> Publicar post</center></th>
-<td>Publicar post vacio y borrar post vacio</td>
+<td>Publicar 5 post vacio y borrar post vacio</td>
 <td></td>
 </tr>
 <tr align="center">
@@ -90,8 +90,10 @@
 <td></td>
 </tr>
 <tr align="center">
-<td>Publicar post solo con titulo pero sin contenido y luego borrarlo</td>
-<td></td>
+<td>Publicar 10 post solo con titulo pero sin contenido</td>
+<td>
+<a href="https://uniandes-my.sharepoint.com/:v:/g/personal/c_barreiroh_uniandes_edu_co/EeUVaSqtvMtJsM7KN5_YxOoB1vcfGWBOa9uVXPTQib2yxA?e=2Wcc7G">Click aqui</a>
+</td>
 </tr>
 <tr align="center">
 <td>Publicar post solo con imagenes pero sin contenido y luego borrarlo</td>
@@ -112,8 +114,40 @@ Luego de haber descargado el repositorio procedera a ejecutar el siguiente coman
 $ npm install --save-dev cypress
 ```
 
+Abre el proyecto con su editor favorito, y de acuerdo a las credeciales de logueo que se tenga en el GHOST(variables ```email``` y ```password```) y la url de despliegue(variable ```baseUrl```) cambialas en el archivo cypress.config.js.
+En el archivo encontraras algo como lo siguiente:
+
+```javascript
+const { defineConfig } = require('cypress')
+module.exports = defineConfig({
+  e2e: {
+    baseUrl: 'http://localhost:2370/ghost/#/signin'
+  },
+  env: {
+    email: 'c.barreiroh@uniandes.edu.co',
+    password: 'Q123456789'
+  }
+})
+```
+
+
 Luego de haber ejecutado el comando anterior procede a ejecutar cypress con el siguiente comando
 
 ```shell
 $ npx cypress open
 ```
+
+Luego de haber ejecutado este comando se desplegara una ventana como se muestra a continuación:
+
+![image](https://user-images.githubusercontent.com/111206402/201262734-c9471dee-94d6-46d2-8b24-5f52cb09c6b4.png)
+
+Se selecciona  E2E Testing , luego seleccionas el navegador a ejecutar las pruebas y finalmente seleccionas el boton ```Start E2E Testing in xxxx```
+
+![image](https://user-images.githubusercontent.com/111206402/201262973-1d10e796-ec91-43d4-a139-892a5a396325.png)
+
+Luego de ello puedes visualizar todos los escenarios de pruebas donde podra seleccionar cualquiera de los escenarios para su ejecución
+
+![image](https://user-images.githubusercontent.com/111206402/201263210-1159d642-66b1-4d92-bfc6-27a09d30b958.png)
+
+Luego de haber dado click en el escenario , esto se proceder a ejecutarse como se muestra en la imagen
+![image](https://user-images.githubusercontent.com/111206402/201263347-48047d55-5b68-485c-a140-9f33dda41e77.png)
