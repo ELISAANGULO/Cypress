@@ -1,7 +1,6 @@
-//Escenario de 50 paginas
+// Escenario Crea 5 miembtro solo con email y no suscrito a newsletter
 const email = Cypress.env('email')
 const password = Cypress.env('password')
-
 const  generateRandomString = (num) => {
     const characters ='ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
     let result1= ' ';
@@ -9,7 +8,6 @@ const  generateRandomString = (num) => {
     for ( let i = 0; i < num; i++ ) {
         result1 += characters.charAt(Math.floor(Math.random() * charactersLength));
     }
-
     return result1;
 }
 describe('Testing basic Ghost', () => {
@@ -25,19 +23,17 @@ describe('Testing basic Ghost', () => {
             cy.get('button[class="login gh-btn gh-btn-login gh-btn-block gh-btn-icon js-login-button ember-view"]').contains('span','Sign in').click()
         });
         cy.wait(1000)
-        cy.contains('a','Pages').click()
-        cy.wait(1000)
-        for(let i=0; i< 51; i++){
-            cy.wait(1000)
-            cy.get('a[class="ember-view gh-btn gh-btn-primary view-actions-top-row"]').contains('span','New page').click()
-            cy.get('textarea[class="gh-editor-title ember-text-area gh-input ember-view"]').type(generateRandomString(5)+' '+generateRandomString(8))
+        for(let i=0; i< 5; i++){
+            cy.contains('Members').click({force: true})
             cy.wait(2000)
-            cy.get('article[class="koenig-editor w-100 flex-grow relative center mb0 mt0 ember-view"]').find('p').click({force:true})
-            cy.wait(6000)
-            cy.visit('http://localhost:2370/ghost/#/pages')
-            cy.wait(7000)
-            cy.get('button').contains('span','Leave').click()
+            cy.get('a[class="ember-view gh-btn gh-btn-primary"]').contains('span','New member').click()
             cy.wait(1000)
+            cy.get('input[name="email"]').type(generateRandomString(4)+'@'+'gmail'+'.com')
+            cy.wait(1000)
+            cy.get('span[class="input-toggle-component"]').click()
+            cy.get('button[class="gh-btn gh-btn-primary gh-btn-icon ember-view"]').contains('span','Save').click()
+            cy.wait(2000)
         }
+        
     })
 })

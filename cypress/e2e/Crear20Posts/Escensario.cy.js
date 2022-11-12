@@ -1,3 +1,4 @@
+//Creacion de 20 posts
 describe('Testing basic Ghost', () => {
     beforeEach(()=>{
        cy.visit('/')

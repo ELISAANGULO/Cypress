@@ -1,3 +1,4 @@
+//Escenario Crear 10 Paginas sin Titulo ni contenido
 const email = Cypress.env('email')
 const password = Cypress.env('password')
 const  generateRandomString = (num) => {

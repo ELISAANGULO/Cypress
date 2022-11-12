@@ -84,7 +84,9 @@
 </tr>
 <tr align="center">
 <td>Guardar miembro solo con email y no suscrito a newsletter</td>
-<td></td>
+<td>
+<a href="https://uniandes-my.sharepoint.com/:v:/g/personal/c_barreiroh_uniandes_edu_co/EcBUhMFWlWJJtK-UO-81gk0BsRvBGL-byUYAudo_RjbHlg?e=Fg6nqr">Click aqui</a>
+</td>
 </tr>
 <tr align="center">
 <th rowspan="4"><center> Publicar post</center></th>

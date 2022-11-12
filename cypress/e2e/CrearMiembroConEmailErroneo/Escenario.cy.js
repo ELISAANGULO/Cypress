@@ -1,3 +1,4 @@
+//Escenario Crear miembro con un Email erroneo
 const email = Cypress.env('email')
 const password = Cypress.env('password')
 const  generateRandomString = (num) => {
