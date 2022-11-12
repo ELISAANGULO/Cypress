@@ -72,7 +72,9 @@
 </tr>
 <tr align="center">
 <td>Guardar miembro vacio</td>
-<td></td>
+<td>
+<a href="https://uniandes-my.sharepoint.com/:v:/g/personal/c_barreiroh_uniandes_edu_co/ETDX00hSGlBCn-5xmKlQUKgBWKRyADPkKTR-vMNqHDy9NA?e=7SEEkX">Click Aqui</a>
+</td>
 </tr>
 <tr align="center">
 <td>Guardar miembro solo con email</td>
