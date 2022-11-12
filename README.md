@@ -66,7 +66,9 @@
 <tr align="center">
 <th rowspan="4"><center> Crear miembro</center></th>
 <td>Añadiendose a uno mismo como miembro</td>
-<td></td>
+<td>
+<a href="https://uniandes-my.sharepoint.com/:v:/g/personal/c_barreiroh_uniandes_edu_co/EYmk8IMokzhGpCqEly6bB3cBIfFopEiaMuc0qjMSCMB3tQ?e=Obmrhl">Click aqui</a>
+</td>
 </tr>
 <tr align="center">
 <td>Guardar miembro vacio</td>
