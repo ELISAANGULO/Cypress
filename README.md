@@ -49,7 +49,9 @@
 <tr align="center">
 <th rowspan="4"><center> Crear tags</center></th>
 <td>Crear tags sin nombre</td>
-<td></td>
+<td>
+<a href="https://uniandes-my.sharepoint.com/:v:/g/personal/c_barreiroh_uniandes_edu_co/EaGQ-4euTxpLhqIuyoGBlF8BQSW1An8dGnBBY5u7JpVQzA?e=nNfGI1">Click Aqui</a>
+</td>
 </tr>
 <tr align="center">
 <td>Crear tags solo con nombre</td>
