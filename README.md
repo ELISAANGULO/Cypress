@@ -54,8 +54,10 @@
 </td>
 </tr>
 <tr align="center">
-<td>Crear tags solo con nombre</td>
-<td></td>
+<td>Crear 10 tags solo con nombre</td>
+<td>
+<a href="https://uniandes-my.sharepoint.com/:v:/g/personal/c_barreiroh_uniandes_edu_co/EVI8bvblPDZJlcA9BhUOyGABgDa4J1B1v0aqhB8fX87jeg?e=RVz1ZF">Click aqui</a>
+</td>
 </tr>
 <tr align="center">
 <td>Crear tags con nombre y descripcion</td>
