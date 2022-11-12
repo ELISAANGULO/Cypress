@@ -100,8 +100,10 @@
 </td>
 </tr>
 <tr align="center">
-<td>Publicar post solo con imagenes pero sin contenido y luego borrarlo</td>
-<td></td>
+<td>Publicar 5 post solo con imagenes pero sin contenido y luego borrarlo</td>
+<td>
+<a href="https://uniandes-my.sharepoint.com/:v:/g/personal/c_barreiroh_uniandes_edu_co/ETuQwvwCa1pBh5Va4h64g2cB44zf5jedPga3fIPdDbqxTQ?e=yuhcnG">Click aqui</a>
+</td>
 </tr>
 </table>
 
