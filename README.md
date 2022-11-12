@@ -77,8 +77,10 @@
 </td>
 </tr>
 <tr align="center">
-<td>Guardar miembro solo con email</td>
-<td></td>
+<td>Guardar miembro con un email erroneo</td>
+<td>
+<a href="https://uniandes-my.sharepoint.com/:v:/g/personal/c_barreiroh_uniandes_edu_co/EVc6VYD15DVHjYMbkeiCqfsBC_uUUTbGqvfWcVZc-lhZpw?e=fEBMP8">Click Aqui</a>
+</td>
 </tr>
 <tr align="center">
 <td>Guardar miembro solo con email y no suscrito a newsletter</td>
