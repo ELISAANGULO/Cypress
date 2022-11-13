@@ -1,5 +1,9 @@
 # Cypress
 
+Este repósitorio es la continuacion del repositorio donde se muestran las pruebas con <a href="https://github.com/ELISAANGULO/pruebaskraken">kraken</a>. Para su entendimiento en este README encontraras los escenarios que se implementaron en las pruebas, adicional comom ejecutar luego de haber clonado el repositorio y finalmente un breve descripcion de las carpetas que se tiene.
+
+En la seccion de la wiki encontrar analisis de acuerdo a la herramiento e informacion de la estrategia que se ha venido plasmando en el transcurso del ciclo.
+
 ## Escenarios implementados en Cypres
 
 <table align="center">
