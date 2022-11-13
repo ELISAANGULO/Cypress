@@ -24,7 +24,7 @@
 <tr align="center">
 <td>Crear un post sin titulo ni contenido</td>
 <td>
-<a hrec="https://uniandes-my.sharepoint.com/:v:/g/personal/c_barreiroh_uniandes_edu_co/EZWZdmIrZOxGnkF1jt8z1LoBlaUaRdnps0VhO_epD4et5Q?e=fzia1u">Click Aqui</a>
+<a href="https://uniandes-my.sharepoint.com/:v:/g/personal/c_barreiroh_uniandes_edu_co/EZWZdmIrZOxGnkF1jt8z1LoBlaUaRdnps0VhO_epD4et5Q?e=fzia1u">Click Aqui</a>
 </td>
 </tr>
 <tr align="center">
