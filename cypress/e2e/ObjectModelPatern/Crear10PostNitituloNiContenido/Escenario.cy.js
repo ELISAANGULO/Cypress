@@ -1,5 +1,5 @@
 import LoginPage from "../Creacion50page/login";
-import PublicarPost from "./publicarpost";
+import IngresoPost from "./ingresopost";
 
 const email = Cypress.env('email')
 const password = Cypress.env('password')
@@ -31,9 +31,9 @@ describe('Testing basic Ghost', () => {
                 login.enterPassword(password);
                 login.submit();
             });
-            it("Then content and title should be empty", function () {
-                const publicar = new PublicarPost();
-                publicar.publicarPost();
+            it("Then content should be empty", function () {
+                const ingreso = new IngresoPost();
+                ingreso.ingresoPost();
             })
         })
     })
