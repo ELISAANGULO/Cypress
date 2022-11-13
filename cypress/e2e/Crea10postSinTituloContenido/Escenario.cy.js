@@ -13,29 +13,33 @@ const  generateRandomString = (num) => {
     return result1;
 }
 describe('Testing basic Ghost', () => {
-    beforeEach(()=>{
-       cy.visit('/')
-        cy.wait(1000)
-    });
-    it('Escenario1',()=>{
-        //Nothing
-        cy.get('form').within(() => {
-            cy.get('input[name="identification"]').type(email)
-            cy.get('input[name="password"]').type(password)
-            cy.get('button[class="login gh-btn gh-btn-login gh-btn-block gh-btn-icon js-login-button ember-view"]').contains('span','Sign in').click()
+    context('Given I access the search engine page', () => {
+        beforeEach(()=>{
+        cy.visit('/')
+            cy.wait(1000)
         });
-        cy.wait(1000)
-        cy.contains('Posts').click({force: true})
-        cy.wait(1000)
-        for(let i=0; i< 9; i++){
-            cy.contains('New post').click()
-            cy.wait(1000)
-            cy.get('article[class="koenig-editor w-100 flex-grow relative center mb0 mt0 ember-view"]').type(generateRandomString(24)+generateRandomString(24)+generateRandomString(24)+generateRandomString(24)+generateRandomString(24)+generateRandomString(24)+generateRandomString(24)+generateRandomString(24))
-            cy.wait(1000)
-            cy.get('a[class="ember-view gh-btn-editor gh-editor-back-button"]').contains('span','Posts').click()
-            cy.wait(5000)
-            /* cy.get('button[class="gh-btn gh-btn-red"]').contains('span','Leave').click()
-            cy.wait(5000) */
-        }
+        context('When I write and login in the page', () => {
+            it('Escenario',()=>{
+                //Nothing
+                cy.get('form').within(() => {
+                    cy.get('input[name="identification"]').type(email)
+                    cy.get('input[name="password"]').type(password)
+                    cy.get('button[class="login gh-btn gh-btn-login gh-btn-block gh-btn-icon js-login-button ember-view"]').contains('span','Sign in').click()
+                });
+                cy.wait(1000)
+                cy.contains('Posts').click({force: true})
+                cy.wait(1000)
+                for(let i=0; i< 9; i++){
+                    cy.contains('New post').click()
+                    cy.wait(1000)
+                    cy.get('article[class="koenig-editor w-100 flex-grow relative center mb0 mt0 ember-view"]').type(generateRandomString(24)+generateRandomString(24)+generateRandomString(24)+generateRandomString(24)+generateRandomString(24)+generateRandomString(24)+generateRandomString(24)+generateRandomString(24))
+                    cy.wait(1000)
+                    cy.get('a[class="ember-view gh-btn-editor gh-editor-back-button"]').contains('span','Posts').click()
+                    cy.wait(5000)
+                    /* cy.get('button[class="gh-btn gh-btn-red"]').contains('span','Leave').click()
+                    cy.wait(5000) */
+                }
+            })
+        })
     })
 })

@@ -12,28 +12,37 @@ const  generateRandomString = (num) => {
     return result1;
 }
 describe('Testing basic Ghost', () => {
-    beforeEach(()=>{
-       cy.visit('/')
-        cy.wait(1000)
-    });
-    it('Escenario1',()=>{
-        //Nothing
-        cy.get('form').within(() => {
-            cy.get('input[name="identification"]').type(email)
-            cy.get('input[name="password"]').type(password)
-            cy.get('button[class="login gh-btn gh-btn-login gh-btn-block gh-btn-icon js-login-button ember-view"]').contains('span','Sign in').click()
+    context('Given I access the search engine page', () => {
+        beforeEach(()=>{
+        cy.visit('/')
+            cy.wait(1000)
         });
-        cy.wait(1000)
-        for(let i=0; i< 9; i++){
-            cy.contains('Tags').click({force: true})
-            cy.wait(2000)
-            cy.get('a[class="ember-view gh-btn gh-btn-primary"]').contains('span','New tag').click()
-            cy.wait(1000)
-            cy.get('input[name="name"]').type(generateRandomString(8))
-            cy.wait(1000)
-            cy.get('button[class="gh-btn gh-btn-primary gh-btn-icon ember-view"]').contains('span','Save').click()
-            cy.wait(1000)
-        }
-        
+        context('When I write and login in the page', () => {
+            it('Escenario1',()=>{
+                //Nothing
+                cy.get('form').within(() => {
+                    cy.get('input[name="identification"]').type(email)
+                    cy.get('input[name="password"]').type(password)
+                    cy.get('button[class="login gh-btn gh-btn-login gh-btn-block gh-btn-icon js-login-button ember-view"]').contains('span','Sign in').click()
+                });
+                cy.wait(1000)
+                for(let i=0; i< 9; i++){
+                    cy.contains('Tags').click({force: true})
+                    cy.wait(2000)
+                    cy.get('a[class="ember-view gh-btn gh-btn-primary"]').contains('span','New tag').click()
+                    cy.wait(1000)
+                    cy.get('input[name="name"]').type(generateRandomString(8))
+
+                    it('Then It not be empty ', () => {
+                        cy.get('input[name="name"]').should('notbe.empty')
+                    })
+
+                    cy.wait(1000)
+                    cy.get('button[class="gh-btn gh-btn-primary gh-btn-icon ember-view"]').contains('span','Save').click()
+                    cy.wait(1000)
+                }
+                
+            })
+        })
     })
 })
