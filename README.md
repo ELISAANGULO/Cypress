@@ -155,12 +155,12 @@ En la seccion de la wiki encontrar analisis de acuerdo a la herramiento e inform
 Para la ejecucion primero se tiene que descargar el repositorio colocando en la terminal el siguiente comando:
 
 ```bash
-$ git clone https://github.com/ELISAANGULO/Cypress
+git clone https://github.com/ELISAANGULO/Cypress
 ```
 Luego de haber descargado el repositorio procedera a ejecutar el siguiente comando dentro de la carpeta descargada
 
 ```bash
-$ npm install --save-dev cypress
+npm install --save-dev cypress
 ```
 
 Abre el proyecto con su editor favorito, y de acuerdo a las credeciales de logueo que se tenga en el GHOST(variables ```email``` y ```password```) y la url de despliegue(variable ```baseUrl```) cambialas en el archivo cypress.config.js.
@@ -190,13 +190,13 @@ Ghost version: 5.22.4
 Ya teniendo las especificaciones, ve a la carpeta donde se tiene ghost y correlo ejecutando el siguiente comando:
 
 ```bash
-$ ghost start
+ghost start
 ```
 
 Luego de haber puesto a correr ghost, ve a la carpeta donde se tiene cypress nuevamente y ejecuta el siguiente comando
 
 ```bash
-$ npx cypress open
+npx cypress open
 ```
 
 Luego de haber ejecutado este comando se desplegara una ventana como se muestra a continuación:
