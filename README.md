@@ -1,3 +1,17 @@
+## Equipo 
+
+| Nombre            | email |
+| -------------     | ------------- |
+| Elisa Angulo      | e.angulov@uniandes.edu.co  |
+| David León        | da.vargasl1@uniandes.edu.co  |
+| Camilo Barreiro   | c.barreiroh@uniandes.edu.co  |
+| Isaí Oliva        | i.oliva@uniandes.edu.co  |
+## Reportes
+[Escenario 1](https://uniandes-my.sharepoint.com/:w:/g/personal/i_oliva_uniandes_edu_co/EXtuFEWlQ8FFoqIdmjGWBmcBDiaRgZ8WDSPJ5eBV24qOag?e=Gh5AHH)
+<br/>
+[Escenario 2](https://uniandes-my.sharepoint.com/:w:/g/personal/i_oliva_uniandes_edu_co/EXtuFEWlQ8FFoqIdmjGWBmcBDiaRgZ8WDSPJ5eBV24qOag?e=hxbCSF)
+
+
 # Cypress
 
 Este repósitorio es la continuacion del repositorio donde se muestran las pruebas con <a href="https://github.com/ELISAANGULO/pruebaskraken">kraken</a>. Para su entendimiento en este README encontraras los escenarios que se implementaron en las pruebas, adicional comom ejecutar luego de haber clonado el repositorio y finalmente un breve descripcion de las carpetas que se tiene.
