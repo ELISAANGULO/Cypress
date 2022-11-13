@@ -10,11 +10,13 @@
 </tr>
 <tr align="center">
 <th rowspan="4"><center> Crear post</center></th>
-<td>Crear 50 posts</td>
-<td></td>
+<td>Crear 20 posts</td>
+<td>
+<a href="https://uniandes-my.sharepoint.com/:v:/g/personal/c_barreiroh_uniandes_edu_co/EUdge-Ts4olHhSIDvDrNWFgBtxibsoBqz5xgzXzimZvEeg?e=q4kvVL">Click aqui</a>
+</td>
 </tr>
 <tr align="center">
-<td>Crear 50 post sin titulo y con contenido</td>
+<td>Crear 10 post sin titulo y con contenido</td>
 <td></td>
 </tr>
 <tr align="center">
@@ -22,7 +24,7 @@
 <td></td>
 </tr>
 <tr align="center">
-<td>Crear un 50 post publicados</td>
+<td>Crear un 10 post solo con imagen</td>
 <td></td>
 </tr>
 <tr align="center">
