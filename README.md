@@ -61,7 +61,9 @@
 </tr>
 <tr align="center">
 <td>Crear tags con nombre y descripcion</td>
-<td></td>
+<td>
+<a href="https://uniandes-my.sharepoint.com/:v:/g/personal/c_barreiroh_uniandes_edu_co/EQn5MOGAOFhAh_Z7e0ZAyrUBgsmUngdpVkeQw9mCjRtgIw?e=QrWXRg">Click aqui</a>
+</td>
 </tr>
 <tr align="center">
 <td>Crear tags con nombre e imagen</td>

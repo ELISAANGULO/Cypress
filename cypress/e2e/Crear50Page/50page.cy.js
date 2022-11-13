@@ -34,7 +34,7 @@ describe('Testing basic Ghost', () => {
             cy.wait(2000)
             cy.get('article[class="koenig-editor w-100 flex-grow relative center mb0 mt0 ember-view"]').find('p').click({force:true})
             cy.wait(6000)
-            cy.visit('http://localhost:2370/ghost/#/pages')
+            cy.get('a[class="ember-view gh-btn-editor gh-editor-back-button"]').contains('span','Pages').click()
             cy.wait(7000)
             cy.get('button').contains('span','Leave').click()
             cy.wait(1000)
