@@ -17,24 +17,39 @@ describe('Testing basic Ghost', () => {
             cy.wait(1000)
         });
         context('When I write and login in the page', () => {
-            it('Escenario',()=>{
-                //Nothing
+            beforeEach(()=>{
+                cy.get('form').within(() => {
+                    cy.get('input[name="identification"]').type(email)
+                    cy.get('input[name="password"]').type(password)
+                    /* cy.get('button[class="login gh-btn gh-btn-login gh-btn-block gh-btn-icon js-login-button ember-view"]').contains('span','Sign in').click() */
+                });
+            });
+            it('Then It not be empty ', () => {
+        
+                cy.get('input[name="identification"]').should('have.value',email)
+                cy.wait(2000)
+                cy.get('input[name="password"]').should('have.value',password)
+                cy.wait(2000)
+                /* cy.get('button[class="login gh-btn gh-btn-login gh-btn-block gh-btn-icon js-login-button ember-view"]').contains('span','Sign in').click() */
+            })
+        })
+        context('When I try write error email', () => {
+            beforeEach(()=>{
                 cy.get('form').within(() => {
                     cy.get('input[name="identification"]').type(email)
                     cy.get('input[name="password"]').type(password)
                     cy.get('button[class="login gh-btn gh-btn-login gh-btn-block gh-btn-icon js-login-button ember-view"]').contains('span','Sign in').click()
                 });
+            });
+            it(' then the email  shouldnt have @gmail',()=>{
+                //Nothing
                 cy.wait(1000)
                 cy.contains('Members').click({force: true})
                 cy.wait(2000)
                 cy.get('a[class="ember-view gh-btn gh-btn-primary"]').contains('span','New member').click()
                 cy.wait(1000)
                 cy.get('input[name="email"]').type(generateRandomString(8))
-                
-                it('Then It not be empty ', () => {
-                    cy.get('input[name="email"]').should('notbe.empty')
-                })
-                
+                cy.get('input[name="email"]').should('not.have.value','@gmail.com')               
                 cy.wait(1000)
                 cy.get('button[class="gh-btn gh-btn-primary gh-btn-icon ember-view"]').contains('span','Save').click()
                 cy.wait(1000)

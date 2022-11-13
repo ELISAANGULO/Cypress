@@ -1,5 +1,5 @@
 import LoginPage from "../Creacion50page/login";
-import IngresoPage from "./ingresoPage";
+import IngresoTag from "./ingresoTag";
 
 const email = Cypress.env('email')
 const password = Cypress.env('password')
@@ -24,16 +24,16 @@ describe('Testing basic Ghost', () => {
                 /* cy.get('button[class="login gh-btn gh-btn-login gh-btn-block gh-btn-icon js-login-button ember-view"]').contains('span','Sign in').click() */
             })
         })
-        context('When I write to post', () => {
+        context('When I create tag', () => {
             beforeEach(()=>{
                 const login = new LoginPage();
                 login.enterEmail(email);
                 login.enterPassword(password);
                 login.submit();
             });
-            it("Then title should content should be empty", function () {
-                const ingreso = new IngresoPage();
-                ingreso.ingresoPage();
+            it("Then name shouldnt be empty", function () {
+                const ingreso = new IngresoTag;
+                ingreso.ingresoTag();
             })
         })
     })

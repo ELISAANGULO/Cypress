@@ -1,3 +1,4 @@
+// Escenario publicar post solo con contenido
 const email = Cypress.env('email')
 const password = Cypress.env('password')
 const  generateRandomString = (num) => {
@@ -17,20 +18,42 @@ describe('Testing basic Ghost', () => {
             cy.wait(1000)
         });
         context('When I write and login in the page', () => {
-            it('Escenario',()=>{
-                //Nothing
+            beforeEach(()=>{
+                cy.get('form').within(() => {
+                    cy.get('input[name="identification"]').type(email)
+                    cy.get('input[name="password"]').type(password)
+                    /* cy.get('button[class="login gh-btn gh-btn-login gh-btn-block gh-btn-icon js-login-button ember-view"]').contains('span','Sign in').click() */
+                });
+            });
+            it('Then It not be empty ', () => {
+        
+                cy.get('input[name="identification"]').should('have.value',email)
+                cy.wait(2000)
+                cy.get('input[name="password"]').should('have.value',password)
+                cy.wait(2000)
+                /* cy.get('button[class="login gh-btn gh-btn-login gh-btn-block gh-btn-icon js-login-button ember-view"]').contains('span','Sign in').click() */
+            })
+        })
+        context('When I post public', () => {
+            beforeEach(()=>{
                 cy.get('form').within(() => {
                     cy.get('input[name="identification"]').type(email)
                     cy.get('input[name="password"]').type(password)
                     cy.get('button[class="login gh-btn gh-btn-login gh-btn-block gh-btn-icon js-login-button ember-view"]').contains('span','Sign in').click()
                 });
+            });
+            it('Then Title content sholdnt be empty',()=>{
+                //Nothing
                 cy.wait(5000)
                 for(let i=0; i< 5; i++){
-                    cy.wait(1000)
+                    cy.wait(2000)
                     cy.contains('Posts').click({force: true})
                     cy.wait(3000)
                     cy.contains('New post').click()
-                    cy.get('article[class="koenig-editor w-100 flex-grow relative center mb0 mt0 ember-view"]').type(generateRandomString(16)+' '+generateRandomString(16))
+                    let content = generateRandomString(16)+' '+generateRandomString(16)
+                    cy.get('article[class="koenig-editor w-100 flex-grow relative center mb0 mt0 ember-view"]').type(content)
+                    cy.wait(6000)
+                    cy.get('article[class="koenig-editor w-100 flex-grow relative center mb0 mt0 ember-view"]').find('div[class="koenig-editor__editor __mobiledoc-editor"]',{ timeout: 10000 }).contains('p',content).should('not.be.empty')
                     cy.wait(1000)
                     cy.get('textarea[class="gh-editor-title ember-text-area gh-input ember-view"]').click()
                     cy.wait(1000)
