@@ -76,7 +76,9 @@
 </tr>
 <tr align="center">
 <td>Crear tags con nombre e imagen</td>
-<td></td>
+<td>
+<a href="https://uniandes-my.sharepoint.com/:v:/g/personal/c_barreiroh_uniandes_edu_co/EWJ5dBUTNelGmR156IsWEp8BWN1HUbngL1qqHRuDtMIwvw?e=XEop2h">Click Aqui</a>
+</td>
 </tr>
 <tr align="center">
 <th rowspan="4"><center> Crear miembro</center></th>
@@ -193,3 +195,102 @@ Luego de ello puedes visualizar todos los escenarios de pruebas donde podra sele
 
 Luego de haber dado click en el escenario , esto se proceder a ejecutarse como se muestra en la imagen
 ![image](https://user-images.githubusercontent.com/111206402/201263347-48047d55-5b68-485c-a140-9f33dda41e77.png)
+
+## Contenido
+
+En el proyecto encontrar las siguientes carpetas:
+
+<table align="center">
+<tr align="center">
+<td><a href="https://github.com/ELISAANGULO/Cypress/blob/main/cypress.config.js">cypress.config</a></td>
+<td> Carpeta de configuracion donde se tiene que modificar las varibles baseurl, email y password de acuerdo ghost</td>
+</tr>
+<tr align="center">
+<td><a href="https://github.com/ELISAANGULO/Cypress/tree/main/cypress/e2e">cypress/e2e</td>
+<td> Carpeta que contiene todas las pruebas de los Escenario de principio a fin</td>
+</tr>
+<tr align="center">
+<td><a href="https://github.com/ELISAANGULO/Cypress/tree/main/cypress/e2e/Cear10PageSinTitutloNiContenido">cypress/e2e/Cear10PageSinTitutloNiContenido</td>
+<td> Escenario Crear 10 paginas sin titulo ni contenido</td>
+</tr>
+<tr align="center">
+<td><a href="https://github.com/ELISAANGULO/Cypress/tree/main/cypress/e2e/Crea10postSinTituloContenido">cypress/e2e/Crea10postSinTituloContenido</td>
+<td> Escenario Crear 10 post Sin titulo pero con contenido</td>
+</tr>
+<tr align="center">
+<td><a href="https://github.com/ELISAANGULO/Cypress/tree/main/cypress/e2e/Creacion50page">cypress/e2e/Creacion50page</td>
+<td> Escenario Crear 50 paginas con titulo</td>
+</tr>
+<tr align="center">
+<td><a href="https://github.com/ELISAANGULO/Cypress/tree/main/cypress/e2e/CreacionTagsNombreDescripcion">cypress/e2e/CreacionTagsNombreDescripcion</td>
+<td> Escenario Crear tags con nombre y descripcion</td>
+</tr>
+<tr align="center">
+<td><a href="https://github.com/ELISAANGULO/Cypress/tree/main/cypress/e2e/Crear10PostNitituloNiContenido">cypress/e2e/Crear10PostNitituloNiContenido</td>
+<td> Escenario Crear 10 post que no tenga titulo y tampoco contenido</td>
+</tr>
+<tr align="center">
+<td><a href="https://github.com/ELISAANGULO/Cypress/tree/main/cypress/e2e/Crear10PostSoloImagen">cypress/e2e/Crear10PostSoloImagen</td>
+<td> Escenario Crear 10 post que tenga solo imagen</td>
+</tr>
+<tr align="center">
+<td><a href="https://github.com/ELISAANGULO/Cypress/tree/main/cypress/e2e/Crear10TagsNombre">cypress/e2e/Crear10TagsNombre</td>
+<td> Escenario Crear 10 tags con nombre</td>
+</tr>
+<tr align="center">
+<td><a href="https://github.com/ELISAANGULO/Cypress/tree/main/cypress/e2e/Crear20Post">cypress/e2e/Crear20Post</td>
+<td> Escenario Crear 20 post con titulo</td>
+</tr>
+<tr align="center">
+<td><a href="https://github.com/ELISAANGULO/Cypress/tree/main/cypress/e2e/CrearMiembroConEmailErroneo">cypress/e2e/CrearMiembroConEmailErroneo</td>
+<td> Crear miembro con email erroneo</td>
+</tr>
+<tr align="center">
+<td><a href="https://github.com/ELISAANGULO/Cypress/tree/main/cypress/e2e/CrearMiemembrosoloEmailyNoSuscritoNewsletter">cypress/e2e/CrearMiemembrosoloEmailyNoSuscritoNewsletter</td>
+<td> Escenario Crear miembro solo con email y no suscrito a news letter</td>
+</tr>
+<tr align="center">
+<td><a href="https://github.com/ELISAANGULO/Cypress/tree/main/cypress/e2e/CrearTagNombreImagen">cypress/e2e/CrearTagNombreImagen</td>
+<td> Escenario Crear Tags que contenga nombre e imagen</td>
+</tr>
+<tr align="center">
+<td><a href="https://github.com/ELISAANGULO/Cypress/tree/main/cypress/e2e/CrearTagNombreImagen">cypress/e2e/CrearTagNombreImagen</td>
+<td> Escenario Crear Tags que contenga nombre e imagen</td>
+</tr>
+<tr align="center">
+<td><a href="https://github.com/ELISAANGULO/Cypress/tree/main/cypress/e2e/CrearTagSinNombre">cypress/e2e/CrearTagSinNombre</td>
+<td> Escenario Crear Tags que no tenga nombre</td>
+</tr>
+<tr align="center">
+<td><a href="https://github.com/ELISAANGULO/Cypress/tree/main/cypress/e2e/CrearUnoMismoMIembro">cypress/e2e/CrearUnoMismoMIembro</td>
+<td>Este Escenario es valido si y solo si todavia no es miembro en la aplicacion. De ser asi añadiria como miembro en la aplicacion</td>
+</tr>
+<tr align="center">
+<td><a href="https://github.com/ELISAANGULO/Cypress/tree/main/cypress/e2e/MIembroCamposVacios">cypress/e2e/MIembroCamposVacios</td>
+<td>Escenario crear un miembro con campos vacios</td>
+</tr>
+<tr align="center">
+<td><a href="https://github.com/ELISAANGULO/Cypress/tree/main/cypress/e2e/PublicaPost">cypress/e2e/PublicaPost</td>
+<td>Escenario para publicar post con titulo</td>
+</tr>
+<tr align="center">
+<td><a href="https://github.com/ELISAANGULO/Cypress/tree/main/cypress/e2e/Publicar5postVacioBorrarlo">cypress/e2e/Publicar5postVacioBorrarlo</td>
+<td>Escenario publicar 5 post vacios y luego borrarlos</td>
+</tr>
+<tr align="center">
+<td><a href="https://github.com/ELISAANGULO/Cypress/tree/main/cypress/e2e/PublicarPostSoloImagenSinContenido">cypress/e2e/PublicarPostSoloImagenSinContenido</td>
+<td>Escenario publicar post con imagen pero sin contenido</td>
+</tr>
+<tr align="center">
+<td><a href="https://github.com/ELISAANGULO/Cypress/tree/main/cypress/e2e/crear10paginasSinTituloConContenido">cypress/e2e/crear10paginasSinTituloConContenido</td>
+<td>Escenario para crear 10 paginas Sin titulo pero con Contenido</td>
+</tr>
+<tr align="center">
+<td><a href="https://github.com/ELISAANGULO/Cypress/tree/main/cypress/e2e/crearPageSoloImagen">cypress/e2e/crearPageSoloImagen</td>
+<td>Escenario para crear una pagina solo con imagen</td>
+</tr>
+<tr align="center">
+<td><a href="https://github.com/ELISAANGULO/Cypress/tree/main/cypress/e2e/publicarpostCOntenidoBorrarlo">cypress/e2e/publicarpostCOntenidoBorrarlo</td>
+<td>Escenario para publicar post con contenido y luego borrarlo</td>
+</tr>
+</table>
