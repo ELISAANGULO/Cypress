@@ -24,13 +24,14 @@
 <tr align="center">
 <td>Crear 10 post sin titulo ni contenido</td>
 <td>
-<a href="https://uniandes-my.sharepoint.com/:v:/g/personal/c_barreiroh_uniandes_edu_co/EZWZdmIrZOxGnkF1jt8z1LoBlaUaRdnps0VhO_epD4et5Q?e=fzia1u">Click Aqui</a>
+<a href="https://uniandes-my.sharepoint.com/:v:/g/personal/c_barreiroh_uniandes_edu_co/EZWZdmIrZOxGnkF1jt8z1LoBlaUaRdnps0VhO_epD4et5Q?e=fzia1u">Click Aqui</a><br>
+<a href="https://user-images.githubusercontent.com/111206402/201521262-47f9d7b0-a8f8-43c9-8637-46331f77b5be.png">Image</a>
 </td>
 </tr>
 <tr align="center">
 <td>Crear un 10 post solo con imagen</td>
 <td>
-<a href="https://uniandes-my.sharepoint.com/:v:/g/personal/c_barreiroh_uniandes_edu_co/Ee3QIsJxT6tNgRaIwmU4LS4BzkcZBhNDP1uJXHhyGdgTLA?e=xKge9c">Click Aqui</a>
+<a href="https://uniandes-my.sharepoint.com/:v:/g/personal/c_barreiroh_uniandes_edu_co/Ee3QIsJxT6tNgRaIwmU4LS4BzkcZBhNDP1uJXHhyGdgTLA?e=xKge9c">Click Aqui</a>, 
 </td>
 </tr>
 <tr align="center">
@@ -133,12 +134,12 @@
 
 Para la ejecucion primero se tiene que descargar el repositorio colocando en la terminal el siguiente comando:
 
-```shell
+```bash
 $ git clone https://github.com/ELISAANGULO/Cypress
 ```
 Luego de haber descargado el repositorio procedera a ejecutar el siguiente comando dentro de la carpeta descargada
 
-```shell
+```bash
 $ npm install --save-dev cypress
 ```
 
@@ -158,10 +159,23 @@ module.exports = defineConfig({
 })
 ```
 
+Luego de haber configurado las variables ```baseUrl``` , ```email``` y ```password``` tendras que desplegar el aplicativo ghost.
 
-Luego de haber ejecutado el comando anterior procede a ejecutar cypress con el siguiente comando
+Para este desarrollo se implemento la siguiente version en ghost:
+```json
+Ghost-CLI version: 1.23.1
+Ghost version: 5.22.4
+```
 
-```shell
+Ya teniendo las especificaciones, ve a la carpeta donde se tiene ghost y correlo ejecutando el siguiente comando:
+
+```bash
+$ ghost start
+```
+
+Luego de haber puesto a correr ghost, ve a la carpeta donde se tiene cypress nuevamente y ejecuta el siguiente comando
+
+```bash
 $ npx cypress open
 ```
 

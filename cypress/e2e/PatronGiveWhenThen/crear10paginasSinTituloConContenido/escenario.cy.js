@@ -18,25 +18,44 @@ describe('Testing basic Ghost', () => {
             cy.wait(1000)
         });
         context('When I write and login in the page', () => {
-            it('Escenario',()=>{
-                //Nothing
+            beforeEach(()=>{
+                cy.get('form').within(() => {
+                    cy.get('input[name="identification"]').type(email)
+                    cy.get('input[name="password"]').type(password)
+                    /* cy.get('button[class="login gh-btn gh-btn-login gh-btn-block gh-btn-icon js-login-button ember-view"]').contains('span','Sign in').click() */
+                });
+            });
+            it('Then It not be empty ', () => {
+        
+                cy.get('input[name="identification"]').should('have.value',email)
+                cy.wait(2000)
+                cy.get('input[name="password"]').should('have.value',password)
+                cy.wait(2000)
+                /* cy.get('button[class="login gh-btn gh-btn-login gh-btn-block gh-btn-icon js-login-button ember-view"]').contains('span','Sign in').click() */
+            })
+        })
+        context('Then I write and login in the page', () => {
+            beforeEach(()=>{
                 cy.get('form').within(() => {
                     cy.get('input[name="identification"]').type(email)
                     cy.get('input[name="password"]').type(password)
                     cy.get('button[class="login gh-btn gh-btn-login gh-btn-block gh-btn-icon js-login-button ember-view"]').contains('span','Sign in').click()
                 });
+            });
+            it('Then title be empty',()=>{
+                //Nothing
                 cy.wait(5000)
                 cy.contains('a','Pages').click()
                 for(let i=0; i< 11; i++){
                     cy.wait(1000)
                     cy.get('a[class="ember-view gh-btn gh-btn-primary view-actions-top-row"]').contains('span','New page').click()
                     cy.wait(2000)
-                    cy.get('article[class="koenig-editor w-100 flex-grow relative center mb0 mt0 ember-view"]').type(generateRandomString(10)+' '+generateRandomString(10)+' '+generateRandomString(10)+' '+generateRandomString(15))
-                    
-                    it('Then It not be empty ', () => {
-                        cy.get('article[class="koenig-editor w-100 flex-grow relative center mb0 mt0 ember-view"]').should('notbe.empty')
-                    })
-                    
+                    let content=generateRandomString(10)+' '+generateRandomString(10)+' '+generateRandomString(10)+' '+generateRandomString(15)
+                    cy.get('article[class="koenig-editor w-100 flex-grow relative center mb0 mt0 ember-view"]').type(content)
+                    cy.wait(3000)
+                    cy.get('textarea[class="gh-editor-title ember-text-area gh-input ember-view"]').should('have.value','')
+                    cy.wait(6000)
+                    cy.get('article[class="koenig-editor w-100 flex-grow relative center mb0 mt0 ember-view"]').find('div[class="koenig-editor__editor __mobiledoc-editor"]',{ timeout: 1000 }).contains('p',content).should('not.be.empty')               
                     cy.wait(2000)
                     cy.get('a[class="ember-view gh-btn-editor gh-editor-back-button"]').contains('span','Pages').click()
                     cy.wait(1000)
